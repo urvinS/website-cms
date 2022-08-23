@@ -1,0 +1,25 @@
+decoupled_kit_block.index:
+  path: '/decoupled_kit/block'
+  defaults:
+    _controller: '\Drupal\decoupled_kit_block\Controller\DefaultController::index'
+    _title: 'index'
+  requirements:
+    _permission: 'access content'
+    _format: json
+decoupled_kit_block.data:
+  path: '/decoupled_kit/block/data/{plugin}'
+  defaults:
+    _controller: '\Drupal\decoupled_kit_block\Controller\DefaultController::getJsonData'
+    _title: 'Blocks data'
+  requirements:
+    _permission: 'access content'
+    _format: json
+decoupled_kit_block.config:
+  path: '/admin/config/decoupled_kit/block/config'
+  defaults:
+    _form: '\Drupal\decoupled_kit_block\Form\ConfigForm'
+    _title: 'Decoupled Block configuration'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE

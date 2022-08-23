@@ -1,0 +1,14 @@
+name: 'Decoupled Kit Webform'
+type: module
+description: 'Decoupled webform integration'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Decoupled Kit'
+dependencies:
+  - decoupled_kit:decoupled_kit
+  - webform:webform
+
+# Information added by Drupal.org packaging script on 2020-10-29
+version: '8.x-1.2'
+project: 'decoupled_kit'
+datestamp: 1603997140

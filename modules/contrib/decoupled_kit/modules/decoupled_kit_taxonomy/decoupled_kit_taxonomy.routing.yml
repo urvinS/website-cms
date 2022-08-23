@@ -1,0 +1,17 @@
+decoupled_kit_taxonomy.index:
+  path: '/decoupled_kit/taxonomy/{id}'
+  defaults:
+    _controller: '\Drupal\decoupled_kit_taxonomy\Controller\DefaultController::index'
+    _title: 'index'
+  requirements:
+    _permission: 'access content'
+    _format: json
+decoupled_kit_taxonomy.config:
+  path: '/admin/config/decoupled_kit/taxonomy/config'
+  defaults:
+    _form: '\Drupal\decoupled_kit_taxonomy\Form\ConfigForm'
+    _title: 'Decoupled Taxonomy configuration'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE

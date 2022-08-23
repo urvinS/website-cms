@@ -1,0 +1,7 @@
+administer breadcrumb fields:
+  title: 'Administer breadcrumb fields'
+  description: 'Gives permission to the users for administer breadcrumb fields'
+
+administer breadcrumb field settings:
+  title: 'Administer breadcrumb field settings'
+  description: 'Gives permission to the users for administer breadcrumb field settings form'

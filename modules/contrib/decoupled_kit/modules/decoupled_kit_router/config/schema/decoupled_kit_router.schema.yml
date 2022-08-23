@@ -1,0 +1,18 @@
+decoupled_kit_router.decoupled_kit_router.*:
+  type: config_entity
+  label: 'Decoupled kit router'
+  mapping:
+    id:
+      type: string
+      label: ID
+    label:
+      type: label
+      label: Label
+    entity_type:
+      type: string
+    entity_bundle:
+      type: string
+    router_path:
+      type: string
+    uuid:
+      type: string

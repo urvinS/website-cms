@@ -1,0 +1,6 @@
+decoupled_kit_block.config:
+  title: 'Decoupled Block'
+  route_name: decoupled_kit_block.config
+  description: 'Decoupled Block config'
+  parent: decoupled_kit.main
+  weight: 0

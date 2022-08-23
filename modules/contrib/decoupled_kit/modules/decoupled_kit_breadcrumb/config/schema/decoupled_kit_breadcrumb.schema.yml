@@ -1,0 +1,19 @@
+decoupled_kit_breadcrumb.config:
+  type: config_entity
+  label: 'Decoupled kit breadcrumb settings'
+  mapping:
+    need_front:
+      type: boolean
+      label: 'Include frontpage to breadcrumbs.'
+    need_title:
+      type: boolean
+      label: 'Include title to breadcrumbs.'
+    path_patterns:
+      type: text
+      label: 'Path patterns.'
+    use_bundle_name:
+      type: boolean
+      label: 'Use bundle name.'
+    need_url_validate:
+      type: boolean
+      label: 'Validate urls.'

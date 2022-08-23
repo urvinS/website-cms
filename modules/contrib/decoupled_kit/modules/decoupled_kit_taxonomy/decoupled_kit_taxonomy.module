@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains decoupled_kit_taxonomy.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function decoupled_kit_taxonomy_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the decoupled_kit_taxonomy module.
+    case 'help.page.decoupled_kit_taxonomy':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Decoupled taxonomy.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

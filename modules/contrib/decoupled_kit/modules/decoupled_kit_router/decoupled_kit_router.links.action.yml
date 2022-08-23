@@ -1,0 +1,5 @@
+entity.decoupled_kit_router.add_form:
+  route_name: 'entity.decoupled_kit_router.add_form'
+  title: 'Add Decoupled Kit Router'
+  appears_on:
+    - entity.decoupled_kit_router.collection

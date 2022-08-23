@@ -1,0 +1,3 @@
+services:
+  decoupled_kit:
+    class: Drupal\decoupled_kit\Controller\DecoupledHelperController

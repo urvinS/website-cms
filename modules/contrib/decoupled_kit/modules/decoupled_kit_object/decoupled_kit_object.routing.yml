@@ -1,0 +1,8 @@
+decoupled_kit_object.index:
+  path: '/decoupled_kit/object'
+  defaults:
+    _controller: '\Drupal\decoupled_kit_object\Controller\DefaultController::index'
+    _title: 'index'
+  requirements:
+    _permission: 'access content'
+    _format: json

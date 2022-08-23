@@ -1,0 +1,5 @@
+entity.decoupled_kit_router.overview:
+  title: Decoupled Kit Routers
+  parent: system.admin_structure
+  description: 'List of Decoupled Kit Routers to extend site functionality.'
+  route_name: entity.decoupled_kit_router.collection

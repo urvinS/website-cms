@@ -1,0 +1,5 @@
+decoupled_kit_redirect.config:
+  route_name: decoupled_kit_redirect.config
+  title: 'Redirect'
+  base_route: decoupled_kit.main
+  weight: 7

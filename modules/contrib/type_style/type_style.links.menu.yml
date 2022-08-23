@@ -1,0 +1,5 @@
+type_style.settings:
+  title: 'Type Style settings'
+  parent: system.admin_config_ui
+  description: 'Configure type style icons.'
+  route_name: type_style.settings

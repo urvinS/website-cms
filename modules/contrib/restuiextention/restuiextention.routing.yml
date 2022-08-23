@@ -1,0 +1,7 @@
+restuiextention.basic_settings:
+  path: '/admin/config/restuiextention/default'
+  defaults:
+    _form: '\Drupal\restuiextention\Form\BasicSettings'
+    _title: 'Administer Logging Configuration'
+  requirements:
+    _role: 'administrator'

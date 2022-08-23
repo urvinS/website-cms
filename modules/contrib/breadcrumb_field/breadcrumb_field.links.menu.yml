@@ -1,0 +1,6 @@
+breadcrumb_field.breadcrumb_field_config_form:
+  title: 'Breadcrumb field settings'
+  route_name: breadcrumb_field.breadcrumb_field_config_form
+  description: 'Controls settings for the module Breadcrumb field'
+  parent: system.admin_config_ui
+

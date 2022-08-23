@@ -1,0 +1,10 @@
+name: Read time
+description: Displays the time it will take to read content on your site.
+package: custom
+type: module
+core_version_requirement: ^8.8 || ^9
+
+# Information added by Drupal.org packaging script on 2021-11-12
+version: '2.0.0-beta1'
+project: 'read_time'
+datestamp: 1636759165

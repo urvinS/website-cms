@@ -1,0 +1,10 @@
+name: 'Breadcrumb field'
+type: module
+description: 'Allow to override breadcrumbs'
+core: 8.x
+package: 'Custom'
+
+# Information added by Drupal.org packaging script on 2019-10-15
+version: '8.x-1.0-alpha1'
+project: 'breadcrumb_field'
+datestamp: 1571178184

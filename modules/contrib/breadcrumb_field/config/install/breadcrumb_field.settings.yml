@@ -1,0 +1,5 @@
+include_home_segment: TRUE
+home_segment_title: 'Home'
+home_segment_keep: FALSE
+include_title_segment: TRUE
+hide_single_home_item: FALSE

@@ -1,0 +1,11 @@
+services:
+  restuiextention.typed_data:
+    class: Drupal\restuiextention\Normalizer\CustomTypedDataNormalizer
+    arguments: ['@entity.manager', '@config.factory', '@logger.factory']
+    tags:
+      - { name: normalizer, priority: 28 }
+  restuiextention.exception.default:
+    class: Drupal\restuiextention\EventSubscriber\CustomDefaultExceptionSubscriber
+    tags:
+      - { name: event_subscriber, priority: 10 }
+    arguments: ['@serializer', '%serializer.formats%', '@logger.factory', '@config.factory']

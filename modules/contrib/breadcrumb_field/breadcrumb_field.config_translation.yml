@@ -1,0 +1,5 @@
+breadcrumb_field.breadcrumb_field_config_form:
+  title: 'Breadcrumb field'
+  base_route_name: breadcrumb_field.breadcrumb_field_config_form
+  names:
+    - breadcrumb_field.settings

@@ -1,0 +1,31 @@
+entity.decoupled_kit_router.collection:
+  path: '/admin/structure/decoupled-kit-router'
+  defaults:
+    _entity_list: 'decoupled_kit_router'
+    _title: 'Decoupled Kit Router list'
+  requirements:
+    _permission: 'administer decoupled_kit_router'
+
+entity.decoupled_kit_router.add_form:
+  path: '/admin/structure/decoupled_kit_router/add'
+  defaults:
+    _entity_form: 'decoupled_kit_router.add'
+    _title: 'Add a Decoupled Kit Router'
+  requirements:
+    _permission: 'administer decoupled_kit_router'
+
+entity.decoupled_kit_router.edit_form:
+  path: '/admin/structure/decoupled-kit-router/{decoupled_kit_router}'
+  defaults:
+    _entity_form: 'decoupled_kit_router.edit'
+    _title: 'Edit a Decoupled Kit Router'
+  requirements:
+    _permission: 'administer decoupled_kit_router'
+
+entity.decoupled_kit_router.delete_form:
+  path: '/admin/structure/decoupled-kit-router/{decoupled_kit_router}/delete'
+  defaults:
+    _entity_form: 'decoupled_kit_router.delete'
+    _title: 'Delete a decoupled_kit_router'
+  requirements:
+    _permission: 'administer decoupled_kit_router'

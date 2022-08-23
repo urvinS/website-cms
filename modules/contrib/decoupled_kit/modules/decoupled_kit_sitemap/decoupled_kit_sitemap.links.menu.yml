@@ -1,0 +1,6 @@
+decoupled_kit_sitemap.config:
+  title: 'Decoupled Sitemap'
+  route_name: decoupled_kit_sitemap.config
+  description: 'Decoupled Sitemap config'
+  parent: decoupled_kit.main
+  weight: 3

@@ -1,0 +1,5 @@
+decoupled_kit.main:
+  title: 'Decoupled Kit'
+  route_name: decoupled_kit.main
+  description: 'Decoupled Kit main page'
+  parent: system.admin_config_system

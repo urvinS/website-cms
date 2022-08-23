@@ -1,0 +1,12 @@
+name: Token UUID
+type: module
+description: Create an Universally unique identifier token for various entities.
+package: Development
+core_version_requirement: ^8.8 || ^9
+dependencies:
+  - token
+
+# Information added by Drupal.org packaging script on 2022-01-20
+version: '2.0.2'
+project: 'tokenuuid'
+datestamp: 1642673691

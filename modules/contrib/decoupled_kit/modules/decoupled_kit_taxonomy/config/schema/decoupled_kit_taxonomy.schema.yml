@@ -1,0 +1,7 @@
+decoupled_kit_taxonomy.config:
+  type: config_entity
+  label: 'Decoupled kit taxonomy settings'
+  mapping:
+    mode:
+      type: string
+      label: 'Mode.'

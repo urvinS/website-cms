@@ -1,0 +1,6 @@
+decoupled_kit_breadcrumb.config:
+  title: 'Decoupled Breadcrumb'
+  route_name: decoupled_kit_breadcrumb.config
+  description: 'Decoupled Breadcrumb'
+  parent: decoupled_kit.main
+  weight: 4

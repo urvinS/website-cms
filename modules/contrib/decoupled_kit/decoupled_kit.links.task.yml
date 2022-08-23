@@ -1,0 +1,4 @@
+decoupled_kit.main:
+  route_name: decoupled_kit.main
+  title: 'Dashboard'
+  base_route: decoupled_kit.main

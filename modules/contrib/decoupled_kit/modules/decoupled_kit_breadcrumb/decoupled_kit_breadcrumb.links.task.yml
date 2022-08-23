@@ -1,0 +1,5 @@
+decoupled_kit_breadcrumb.config:
+  route_name: decoupled_kit_breadcrumb.config
+  title: 'Breadcrumb'
+  base_route: decoupled_kit.main
+  weight: 4

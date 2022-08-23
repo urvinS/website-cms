@@ -1,0 +1,7 @@
+decoupled_kit.main:
+  path: '/admin/config/decoupled_kit'
+  defaults:
+    _form: '\Drupal\decoupled_kit\Form\DefaultForm'
+    _title: 'Decoupled Kit dashboard'
+  requirements:
+    _permission: 'access content'

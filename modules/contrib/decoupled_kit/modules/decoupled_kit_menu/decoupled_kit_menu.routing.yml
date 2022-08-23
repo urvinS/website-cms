@@ -1,0 +1,8 @@
+decoupled_kit_menu.index:
+  path: '/decoupled_kit/menu/{id}'
+  defaults:
+    _controller: '\Drupal\decoupled_kit_menu\Controller\DefaultController::index'
+    _title: 'index'
+  requirements:
+    _permission: 'access content'
+    _format: json

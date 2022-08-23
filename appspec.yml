@@ -1,0 +1,19 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ec2-user/bhartiaxa-cms
+permissions:
+  - object: /
+    pattern: "**"
+    owner: nginx
+    group: nginx
+hooks:
+  BeforeInstall:
+    - location: scripts/beforeinstall.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: scripts/afterinstall.sh
+      timeout: 300
+      runas: root

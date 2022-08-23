@@ -1,0 +1,7 @@
+decoupled_kit_block.config:
+  type: config_entity
+  label: 'Decoupled kit block settings'
+  mapping:
+    mode:
+      type: string
+      label: 'Mode.'

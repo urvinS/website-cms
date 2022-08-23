@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * @file
+ * Contains breadcrumb_field.module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+/**
+ * Implements hook_help().
+ */
+function breadcrumb_field_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the breadcrumb_field module.
+    case 'help.page.breadcrumb_field':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Allow to override breadcrumbs') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ * @param $form
+ * @param FormStateInterface $form_state
+ */
+function breadcrumb_field_form_node_form_alter(&$form, FormStateInterface $form_state) {
+  $user = \Drupal::currentUser();
+  $build_info = $form_state->getBuildInfo();
+  /** @var \Drupal\node\NodeInterface $node */
+  $node = $build_info['callback_object']->getEntity();
+  $field_definitions = $node->getFieldDefinitions();
+  $form_display_flag = FALSE;
+  foreach ($field_definitions as $field_definition) {
+    if ($field_definition->getType() == 'breadcrumb_field_type') {
+      $form_display_flag = TRUE;
+      $field_name = $field_definition->getName();
+    }
+  }
+  // Proceed only if node has breadcrumb_field_type.
+  if ($form_display_flag) {
+    $form['#cache']['contexts'][] = 'user.permissions';
+    $permission = $user->hasPermission('administer breadcrumb fields');
+    // wrap breadcrumb_field_type field into advanced section
+    $form['breadcrumb_field_type_wrap'] = array(
+      '#type' => 'details',
+      '#title' => t('Breadcrumb field'),
+      '#group' => 'advanced',
+      '#attributes' => array(
+        'class' => array('node-form-breadcrumb-field-options'),
+      ),
+      '#weight' => 100,
+      '#optional' => TRUE,
+    );
+    // breadcrumb_field_type logic
+    if (isset($form[$field_name])) {
+      $form[$field_name]['#group'] = 'breadcrumb_field_type_wrap';
+      if (!$permission) {
+        // People without access can't change breadcrumb_field_type value
+        $form[$field_name]['#disabled'] = TRUE;
+      }
+    }
+  }
+}

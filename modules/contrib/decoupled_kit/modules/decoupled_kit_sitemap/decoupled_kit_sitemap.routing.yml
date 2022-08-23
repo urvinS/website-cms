@@ -1,0 +1,18 @@
+
+decoupled_kit_sitemap.index:
+  path: '/decoupled_kit/sitemap'
+  defaults:
+    _controller: '\Drupal\decoupled_kit_sitemap\Controller\DefaultController::index'
+    _title: 'index'
+  requirements:
+    _permission: 'access content'
+    _format: json
+decoupled_kit_sitemap.config:
+  path: '/admin/config/decoupled_kit/sitemap/config'
+  defaults:
+    _form: '\Drupal\decoupled_kit_sitemap\Form\ConfigForm'
+    _title: 'Decoupled Sitemap configuration'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE

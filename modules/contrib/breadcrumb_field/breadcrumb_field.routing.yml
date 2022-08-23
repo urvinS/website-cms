@@ -1,0 +1,9 @@
+
+breadcrumb_field.breadcrumb_field_config_form:
+  path: '/admin/config/user-interface/breadcrumb_field_form'
+  defaults:
+    _form: '\Drupal\breadcrumb_field\Form\BreadcrumbFieldConfigForm'
+    _title: 'Breadcrumb Field Settings'
+  requirements:
+    _permission: 'administer breadcrumb field settings'
+

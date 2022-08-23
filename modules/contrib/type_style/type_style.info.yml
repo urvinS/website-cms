@@ -1,0 +1,12 @@
+name: 'Type Style'
+type: module
+description: 'Adds configuration to distinctly style types (entity bundles).'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: Other
+configure: type_style.settings
+
+# Information added by Drupal.org packaging script on 2020-03-23
+version: '8.x-1.0'
+project: 'type_style'
+datestamp: 1584938572

@@ -1,0 +1,7 @@
+decoupled_kit_redirect.config:
+  type: config_entity
+  label: 'Decoupled kit redirect settings'
+  mapping:
+    mode:
+      type: string
+      label: 'Mode.'

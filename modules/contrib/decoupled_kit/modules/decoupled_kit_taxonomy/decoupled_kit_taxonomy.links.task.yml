@@ -1,0 +1,5 @@
+decoupled_kit_taxonomy.config:
+  route_name: decoupled_kit_taxonomy.config
+  title: 'Taxonomy'
+  base_route: decoupled_kit.main
+  weight: 2

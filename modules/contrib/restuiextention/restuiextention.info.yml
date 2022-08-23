@@ -1,0 +1,19 @@
+name: 'Rest UI Extention'
+type: module
+description: 'It is an extestion to REST UI module. It provides standard exceptions and messages for the webservices faciliated by REST UI. It also faciliates standard webservice formats for the requests and responses.'
+core: 8.x
+package: 'Web services standards'
+weight: 2
+dependencies:
+  - drupal:rest
+  - drupal:restui
+  - drupal:system (>=8.2.0)
+# Information added by Drupal.org packaging script on 2019-08-29
+# version: '8.x-1.1'
+# project: 'restuiextention'
+# datestamp: 1567074489
+
+# Information added by Drupal.org packaging script on 2019-09-19
+version: '8.x-1.5'
+project: 'restuiextention'
+datestamp: 1568883488

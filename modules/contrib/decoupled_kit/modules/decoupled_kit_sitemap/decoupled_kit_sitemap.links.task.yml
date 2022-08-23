@@ -1,0 +1,5 @@
+decoupled_kit_sitemap.config:
+  route_name: decoupled_kit_sitemap.config
+  title: 'Sitemap'
+  base_route: decoupled_kit.main
+  weight: 3
